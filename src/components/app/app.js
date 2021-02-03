@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { SwapiServiceProvider } from "../swapi-service-context/";
+import { SwapiServiceProvider } from "../swapi-service-context";
 import Header from '../header';
 import RandomPlanet from '../random-planet';
 import ErrorIndicator from '../error-indicator';
@@ -50,7 +50,7 @@ export default class App extends Component {
           <div className="stardb-app">
             <Header onServiceChange={this.onServiceChange} />
 
-            <RandomPlanet/>
+            <RandomPlanet />
 
             <PeoplePage />
             <PlanetPage />
